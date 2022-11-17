@@ -70,18 +70,10 @@ const Sidebar = () => {
           <List spacing={2}>
             {navMenu.map((menu) => (
               <ListItem paddingX="20px" fontSize="16px" key={menu.name}>
-                <LinkBox>
-                  <NextLink href={menu.route} passHref>
-                    <LinkOverlay>
-                      <ListIcon
-                        as={menu.icon}
-                        color="white"
-                        marginRight="20px"
-                      />
-                      {menu.name}
-                    </LinkOverlay>
-                  </NextLink>
-                </LinkBox>
+                <NextLink href={menu.route} passHref>
+                  <ListIcon as={menu.icon} color="white" marginRight="20px" />
+                  {menu.name}
+                </NextLink>
               </ListItem>
             ))}
           </List>
@@ -92,14 +84,8 @@ const Sidebar = () => {
               <ListItem paddingX="20px" fontSize="16px" key={menu.name}>
                 <LinkBox>
                   <NextLink href={menu.route} passHref>
-                    <LinkOverlay>
-                      <ListIcon
-                        as={menu.icon}
-                        color="white"
-                        marginRight="20px"
-                      />
-                      {menu.name}
-                    </LinkOverlay>
+                    <ListIcon as={menu.icon} color="white" marginRight="20px" />
+                    {menu.name}
                   </NextLink>
                 </LinkBox>
               </ListItem>
@@ -111,11 +97,9 @@ const Sidebar = () => {
           <List spacing={2}>
             {playlists.map((playlist) => (
               <ListItem paddingX="20px" key={playlist}>
-                <LinkBox>
-                  <NextLink href="/" passHref>
-                    <LinkOverlay>{playlist}</LinkOverlay>
-                  </NextLink>
-                </LinkBox>
+                <NextLink href="/" passHref>
+                  {playlist}
+                </NextLink>
               </ListItem>
             ))}
           </List>
