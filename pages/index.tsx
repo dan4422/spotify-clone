@@ -1,10 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import GradientLayout from '../components/gradientLayout';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <GradientLayout
+      roundImage
+      color="blue"
+      subtitle="profile"
+      title="Daniel Lee"
+      description="15 public playlists"
+      image="https://frontendmasters.github.io/fullstack-app-next-website/images/profile.png"
+    >
+      <div>Home Page</div>
+    </GradientLayout>
   );
 };
 
