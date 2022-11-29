@@ -5,7 +5,7 @@ import { useMe } from "../lib/hooks";
 import prisma from "../lib/prisma";
 
 const Home = ({ artists }) => {
-  const { user, isLoading, error } = useMe();
+  const { user } = useMe();
 
   return (
     <GradientLayout
@@ -18,7 +18,9 @@ const Home = ({ artists }) => {
     >
       <Box color="white" paddingX="40px">
         <Box marginBottom="40px">
-          <Text fontSize="2xl" fontWeight="bold">Top Artist this Month</Text>
+          <Text fontSize="2xl" fontWeight="bold">
+            Top Artist this Month
+          </Text>
           <Text fontSize="medium">Only visible to you</Text>
         </Box>
         <Flex>
