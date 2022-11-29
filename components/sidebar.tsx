@@ -7,9 +7,7 @@ import {
   ListItem,
   ListIcon,
   Divider,
-  Center,
   LinkBox,
-  LinkOverlay,
 } from "@chakra-ui/layout";
 
 import {
